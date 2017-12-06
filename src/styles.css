@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+button{
+    border-radius: 12px;
+    background-color: rgb(46, 44, 43);
+    width: 150px;
+    height: 50px
+}
