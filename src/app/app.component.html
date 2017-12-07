@@ -2,12 +2,17 @@
 
 <div class="row">
 <div class="col-sm-4">
-    <div><button md-button color="primary" >Students</button></div>
+    <div><button md-button color="primary" (click)= "studentListing('student')" >Students</button></div>
     <br>
     <div><button md-button color="primary" >Teachers</button></div>
 </div>
-<div class="col-sm-8">
-    Details div
-    </div>
+<div class="col-sm-2">
+   <!---->
+</div>
+<div class="col-sm-6">
+<div *ngIf = "student">
+        <app-student></app-student>
+</div>
+</div>
 </div>
 
