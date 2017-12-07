@@ -2,9 +2,9 @@
 
 <div class="row">
 <div class="col-sm-4">
-    <div><button md-button color="primary" (click)= "studentListing('student')" >Students</button></div>
+    <div><button md-button color="primary" (click)= "studentListing()" >Students</button></div>
     <br>
-    <div><button md-button color="primary" >Teachers</button></div>
+    <div><button md-button color="primary" (click)= "teacherListing()">Teachers</button></div>
 </div>
 <div class="col-sm-2">
    <!---->
@@ -12,6 +12,9 @@
 <div class="col-sm-6">
 <div *ngIf = "student">
         <app-student></app-student>
+</div>
+<div *ngIf = "teacher">
+        <app-teacher></app-teacher>
 </div>
 </div>
 </div>

@@ -9,8 +9,13 @@ import { Student } from '../studInterface';
 export class AppComponent {
   title = 'Admin';
   student: string;
-
-  studentListing(stud: string) {
-    this.student = stud;
+  teacher: string;
+  studentListing() {
+    this.student = 'student';
+    this.teacher = null;
+  }
+  teacherListing() {
+    this.teacher = 'teacher';
+    this.student = null;
   }
 }
