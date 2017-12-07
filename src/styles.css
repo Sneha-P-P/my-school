@@ -7,3 +7,12 @@ button{
     width: 150px;
     height: 50px
 }
+click{
+    color: white;
+}
+.detailsView{
+    background:brown; 
+    width:170px; 
+    height:150px; 
+    border-radius:15px
+}

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Student } from '../../studInterface';
 import { studentsList } from '../../mock-students';
 
@@ -11,8 +11,11 @@ import { studentsList } from '../../mock-students';
 
 export class StudentComponent implements OnInit {
   studentDetails: Student[] = studentsList;
+  selectedStudent: Student;
   constructor() { }
-
+  studentDisplay(student: Student) {
+    this.selectedStudent = student;
+  }
   ngOnInit() {
   }
 
