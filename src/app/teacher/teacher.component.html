@@ -1,8 +1,17 @@
 
 
-<div>
-    <h2>List of Teachers</h2>
-    <li *ngFor = "let teacher of teacherDetails">
-            <span> {{teacher.name}} </span>
-    </li>                
-</div>
+
+   <span>
+      <h2>List of Teachers</h2>
+      <li *ngFor = "let teacher of teacherDetails">
+              <span (click)= "teacherDisplay(teacher)" > {{teacher.name}} </span>
+      </li>                
+   </span>
+   <br><br><br>
+   <span *ngIf = "selectedTeacher" >
+     <div style="background:brown; width:170px; height:150px; border-radius:15px">
+        <app-teacher-details [teacher] = "selectedTeacher" ></app-teacher-details>
+     </div>
+    
+   </span>
+

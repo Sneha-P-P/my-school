@@ -9,8 +9,11 @@ import { teacherList } from '../../mock-teacher';
 })
 export class TeacherComponent implements OnInit {
   teacherDetails: Teacher[] = teacherList;
+  selectedTeacher: Teacher;
   constructor() { }
-
+  teacherDisplay(teacher: Teacher) {
+     this.selectedTeacher = teacher;
+  }
   ngOnInit() {
   }
 
