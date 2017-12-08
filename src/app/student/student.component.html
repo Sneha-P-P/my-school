@@ -6,6 +6,8 @@
             <span (click) = "studentDisplay(student)" > {{student.id}} </span>
     </li>                
   </span><br><br>
-  <span *ngIf = "selectedStudent" class="detailsView">
-    <app-student-details [student]="selectedStudent" ></app-student-details>
+  <span *ngIf = "selectedStudent" >
+    <div class="detailsView">
+        <app-student-details [student]="selectedStudent" ></app-student-details>
+    </div>
   </span>

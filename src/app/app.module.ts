@@ -8,6 +8,8 @@ import { StudentComponent } from './student/student.component';
 import { TeacherComponent } from './teacher/teacher.component';
 import { TeacherDetailsComponent } from './teacher-details/teacher-details.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -15,13 +17,15 @@ import { StudentDetailsComponent } from './student-details/student-details.compo
     StudentComponent,
     TeacherComponent,
     TeacherDetailsComponent,
-    StudentDetailsComponent
+    StudentDetailsComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
